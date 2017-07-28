@@ -94,5 +94,3 @@ def createTree(X,y,labels,n_feature=3):
         subLabels=labels[:]
         myTree[bestFeatLabel][value]=createTree(splitDataSet(X,bestFeat,value),subLabels)
     return myTree
-
-#test triple
